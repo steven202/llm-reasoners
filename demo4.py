@@ -12,6 +12,7 @@ import reasoners.benchmark.bw_utils as utils
 import torch
 os.environ['CUDA_VISIBLE_DEVICES'] = '0,1'
 os.environ['VAL'] = "/sciclone/home/cwang33/llm-reasoners/LLMs-Planning/planner_tools/VAL"
+os.environ['HF_HOME'] = "/sciclone/data10/cwang33/cache/huggingface"
 # Initialize vllm model
 # llm = LLM(model="Skywork/Skywork-o1-Open-Llama-3.1-8B", tensor_parallel_size=1)
 # sampling_params = SamplingParams(temperature=0.8, top_p=0.95, max_tokens=200)
